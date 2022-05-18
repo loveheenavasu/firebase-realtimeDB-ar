@@ -13,7 +13,7 @@ const Dashboard = () => {
         signOut(auth).then(() => {
             navigate('/');
           }).catch((error) => {
-            console.log("Error occured in signing out! Try Again...");
+            console.log("Error occured in signing out! Try Again...\n Have a look about error message here ", error);
           });
     }
     return (
